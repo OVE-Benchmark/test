@@ -126,46 +126,73 @@
 </section>
 <!-- End Teaser Video Section -->
 
-  <!-- New Section: How OVE Solves These Problems -->
+<!-- New Section: OVE Dataset Visualization -->
 <section class="section">
     <div class="container is-max-desktop">
         <div class="columns is-centered">
-            <!-- Left Column: Icons Highlighting Key Features -->
+            <!-- Left Column: Dataset Statistics -->
             <div class="column is-5 has-text-centered">
-                <h2 class="title is-4 has-text-primary">How ObjVariantEnsemble Solves These Problems</h2>
-                
+                <h2 class="title is-4 has-text-primary">OVE Dataset Visualization</h2>
+
                 <div class="box">
                     <i class="fas fa-database fa-3x has-text-primary"></i>
-                    <h3 class="is-size-5 has-text-weight-semibold mt-3">Larger & More Diverse Dataset</h3>
-                    <p>Includes more object variations and fine-grained annotations.</p>
-                </div>
+                    <h3 class="is-size-5 has-text-weight-semibold mt-3">Dataset Scale & Diversity</h3>
+                    <p>OVE contains significantly more samples and annotations compared to existing benchmarks.</p>
 
-                <div class="box">
-                    <i class="fas fa-tasks fa-3x has-text-info"></i>
-                    <h3 class="is-size-5 has-text-weight-semibold mt-3">Customizable Challenge Levels</h3>
-                    <p>Adjustable task difficulty based on object similarity and scene complexity.</p>
-                </div>
-
-                <div class="box">
-                    <i class="fas fa-brain fa-3x has-text-success"></i>
-                    <h3 class="is-size-5 has-text-weight-semibold mt-3">Improved 3D Grounding</h3>
-                    <p>Better performance on identifying similar objects in dense environments.</p>
+                    <!-- Dataset Table -->
+                    <table class="table is-bordered is-striped is-hoverable is-fullwidth mt-3">
+                        <thead>
+                            <tr>
+                                <th>Benchmark</th>
+                                <th>Scenes</th>
+                                <th>Objects</th>
+                                <th>Annotations</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ScanRef</td>
+                                <td>705</td>
+                                <td>36,655</td>
+                                <td>51,583</td>
+                            </tr>
+                            <tr>
+                                <td>3DVG-Trans</td>
+                                <td>1,417</td>
+                                <td>40,750</td>
+                                <td>63,452</td>
+                            </tr>
+                            <tr>
+                                <td><strong>OVE (Ours)</strong></td>
+                                <td><strong>3,000+</strong></td>
+                                <td><strong>100,000+</strong></td>
+                                <td><strong>200,000+</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
 
-            <!-- Right Column: Data Visualization Image -->
+            <!-- Right Column: Customizable Challenge Levels -->
             <div class="column is-5 has-text-centered">
-                <figure>
-                    <img src="static/images/benchmark_comparison.png" alt="Benchmark Comparison" class="image">
-                    <figcaption class="is-size-6 has-text-grey mt-2">
-                        Data visualization of improved 3D grounding performance with ObjVariantEnsemble.
-                    </figcaption>
-                </figure>
+                <div class="box">
+                    <i class="fas fa-tasks fa-3x has-text-info"></i>
+                    <h3 class="is-size-5 has-text-weight-semibold mt-3">Customizable Challenge Levels</h3>
+                    <p>OVE enables controlled difficulty adjustments based on object similarity and spatial complexity.</p>
+
+                    <!-- Visualization Images -->
+                    <figure class="mt-3">
+                        <img src="static/images/custom_difficulty_levels.png" alt="Customizable Difficulty Levels" class="image">
+                        <figcaption class="is-size-6 has-text-grey mt-2">
+                            Three challenge levels: easy, medium, and hard.
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
         </div>
     </div>
 </section>
-<!-- End How OVE Solves These Problems Section -->
+<!-- End OVE Dataset Visualization Section -->
 
 
 
