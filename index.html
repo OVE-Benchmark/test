@@ -81,28 +81,46 @@
 <section class="hero teaser">
     <div class="container is-max-desktop">
         <div class="hero-body">
-            <video poster="" id="tree" autoplay controls muted loop height="100%">
-                <!-- Video source -->
+            <!-- Video Section -->
+            <video poster="" id="tree" autoplay controls muted loop width="100%">
                 <source src="My Movie.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            
+
             <!-- Benchmark Problems Section -->
-            <div class="content has-text-centered mt-5">
-                <h2 class="title is-4 has-text-weight-semibold">Problems of Current Benchmarks?</h2>
-                <p class="is-size-5">
-                    <span class="has-text-danger"><strong>• Small scale and insufficient annotations.</strong></span><br>
-                    <span class="has-text-danger"><strong>• Lack of customizable challenge levels.</strong></span>
-                </p>
+            <div class="content mt-5">
+                <h2 class="title is-4 has-text-centered has-text-weight-bold has-text-danger">
+                    Problems of Current Benchmarks
+                </h2>
+                <ul class="is-size-5 has-text-left" style="max-width: 800px; margin: 0 auto;">
+                    <li class="mb-2">
+                        <span class="has-text-danger"><i class="fas fa-exclamation-triangle"></i> Small scale and insufficient annotations.</span>
+                    </li>
+                    <li>
+                        <span class="has-text-danger"><i class="fas fa-tools"></i> Lack of customizable challenge levels.</span>
+                    </li>
+                </ul>
             </div>
 
-            <!-- Comparison Explanation -->
-            <div class="content has-text-centered mt-4">
-                <h2 class="subtitle is-size-5">
-                    <strong>Comparison of 3D grounding benchmarks in complex scenes:</strong><br><br>
-                    <span class="has-text-info"><strong>[Left]</strong></span> A scene from ScanNet/ScanRef, where the text description is insufficient for accurately locating a chair.<br>
-                    <span class="has-text-success"><strong>[Right]</strong></span> A scene from ObjVariantEnsemble, where a model successfully identifies targets given sufficiently detailed descriptions.
+            <!-- Comparison Section -->
+            <div class="content mt-5">
+                <h2 class="subtitle is-size-5 has-text-centered">
+                    <span class="has-text-weight-semibold">Comparison of 3D grounding benchmarks in complex scenes:</span>
                 </h2>
+                <div class="columns is-centered">
+                    <!-- Left Scene -->
+                    <div class="column is-5 has-text-left">
+                        <p class="has-text-info">
+                            <strong>[Left]</strong> A scene from <strong>ScanNet/ScanRef</strong>, where the text description is insufficient for accurately locating a chair.
+                        </p>
+                    </div>
+                    <!-- Right Scene -->
+                    <div class="column is-5 has-text-left">
+                        <p class="has-text-success">
+                            <strong>[Right]</strong> A scene from <strong>ObjVariantEnsemble</strong>, where a model successfully identifies targets given sufficiently detailed descriptions.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
